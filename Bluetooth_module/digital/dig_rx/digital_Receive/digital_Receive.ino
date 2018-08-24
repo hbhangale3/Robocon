@@ -1,3 +1,8 @@
+/*the following code receives the value
+of the button state from the transmitter
+and operates the led hrough it
+*/
+
 #define ledPin 9
 int state = 0;
 
