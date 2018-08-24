@@ -1,4 +1,8 @@
-
+/*
+the following code takes the value
+of the current button state and transmit
+it over the serial port.
+*/
 #define button 8
 int buttonState = 0;
 
@@ -11,9 +15,9 @@ void loop() {
  delay(100);
  buttonState = digitalRead(button);
  if (buttonState == HIGH) {
-   Serial.print('1'); // Sends '1' to serialout
+   Serial.write('1'); // Sends '1' to serialout
  }
  else {
-   Serial.print('0');
+   Serial.write('0');
  }  
 }
