@@ -1,4 +1,8 @@
-
+/*
+In the following code we read the value of
+the potentiometer and transmit the analog 
+reading over the serial port.
+*/
 int potValue = 0;
 
 void setup() {
